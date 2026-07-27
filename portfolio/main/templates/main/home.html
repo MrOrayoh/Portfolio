@@ -1,67 +1,116 @@
 {% extends 'main/base.html' %}
+{% load static %}
 
 {% block content %}
 
-<!-- HERO -->
+<!-- HERO SECTION -->
 <section class="hero">
     <div class="hero-content">
-        <img src="/static/images/profile.jpg" class="profile-pic">
+        <img src="{% static 'images/profile.jpg' %}" alt="Brian" class="profile-pic">
 
         <h1>Hi, I'm Brian 👋</h1>
         <p class="subtitle">Flutter & Django Developer</p>
 
-        <a href="#projects" class="btn">View My Work</a>
+        <div class="btn-group">
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
     </div>
 </section>
 
-<!-- ABOUT -->
+<!-- ABOUT SECTION -->
 <section id="about" class="section">
     <h2>About Me</h2>
-    <p>
-        I'm an IT student passionate about building real-world applications like
-        Spotted, MrSphere, and transport systems. I love clean UI and smart backend systems.
+    <p style="max-width: 700px; margin: 0 auto; color: var(--text-muted); font-size: 1.1rem;">
+        I'm an IT student passionate about building real-world cross-platform mobile and web applications. 
+        I specialize in constructing clean user interfaces with <strong>Flutter</strong> and scalable backend systems with <strong>Django</strong>.
     </p>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="section">
-    <h2>Projects</h2>
-
-    <div class="projects-grid">
-        <div class="card">
-            <h3>Spotted App</h3>
-            <p>Location-based social app with live features.</p>
-        </div>
-
-        <div class="card">
-            <h3>MrSphere</h3>
-            <p>Voice-controlled system to manage devices.</p>
-        </div>
-
-        <div class="card">
-            <h3>TSafari</h3>
-            <p>Transport booking system with real-time drivers.</p>
-        </div>
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section class="section">
-    <h2>Skills</h2>
+<!-- SKILLS SECTION -->
+<section id="skills" class="section">
+    <h2>Tech Stack & Skills</h2>
 
     <div class="skills">
-        <span>Flutter</span>
-        <span>Django</span>
-        <span>Firebase</span>
-        <span>Python</span>
+        <span><i class="fab fa-flutter"></i> Flutter</span>
+        <span><i class="fab fa-python"></i> Django</span>
+        <span><i class="fab fa-python"></i> Python</span>
+        <span><i class="fas fa-fire"></i> Firebase</span>
+        <span><i class="fas fa-database"></i> PostgreSQL</span>
+        <span><i class="fab fa-git-alt"></i> Git & GitHub</span>
     </div>
 </section>
 
-<!-- CONTACT -->
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section">
+    <h2>Featured Projects</h2>
+
+    <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="card">
+            <h3>Spotted App</h3>
+            <p>Location-based social discovery app built with Flutter and real-time live location services.</p>
+            <div style="margin-bottom: 1.25rem;">
+                <span style="font-size: 0.8rem; padding: 4px 10px; background: rgba(56, 189, 248, 0.1); color: var(--primary); border-radius: 12px; margin-right: 5px;">Flutter</span>
+                <span style="font-size: 0.8rem; padding: 4px 10px; background: rgba(56, 189, 248, 0.1); color: var(--primary); border-radius: 12px;">Firebase</span>
+            </div>
+            <a href="https://github.com/MrOrayoh" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 600; font-size: 0.9rem;">
+                View on GitHub <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i>
+            </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card">
+            <h3>MrSphere</h3>
+            <p>Smart voice-controlled assistant system designed to interact with and manage connected devices seamlessly.</p>
+            <div style="margin-bottom: 1.25rem;">
+                <span style="font-size: 0.8rem; padding: 4px 10px; background: rgba(56, 189, 248, 0.1); color: var(--primary); border-radius: 12px; margin-right: 5px;">Python</span>
+                <span style="font-size: 0.8rem; padding: 4px 10px; background: rgba(56, 189, 248, 0.1); color: var(--primary); border-radius: 12px;">Django</span>
+            </div>
+            <a href="https://github.com/MrOrayoh" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 600; font-size: 0.9rem;">
+                View on GitHub <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i>
+            </a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card">
+            <h3>TSafari</h3>
+            <p>On-demand transport booking platform featuring real-time driver tracking and trip management.</p>
+            <div style="margin-bottom: 1.25rem;">
+                <span style="font-size: 0.8rem; padding: 4px 10px; background: rgba(56, 189, 248, 0.1); color: var(--primary); border-radius: 12px; margin-right: 5px;">Flutter</span>
+                <span style="font-size: 0.8rem; padding: 4px 10px; background: rgba(56, 189, 248, 0.1); color: var(--primary); border-radius: 12px;">Django API</span>
+            </div>
+            <a href="https://github.com/MrOrayoh" target="_blank" style="color: var(--primary); text-decoration: none; font-weight: 600; font-size: 0.9rem;">
+                View on GitHub <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
 <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: odhiambobran004@gmail.com</p>
-    <p>WhatsApp: +25411736502</p>
+    <h2>Let's Work Together</h2>
+    <p style="color: var(--text-muted); margin-bottom: 2rem;">
+        Have a project idea or want to collaborate? Feel free to reach out directly.
+    </p>
+
+    <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+        <a href="mailto:odhiambobran004@gmail.com" class="card" style="text-decoration: none; display: flex; align-items: center; gap: 1rem; padding: 1.2rem 2rem; min-width: 250px;">
+            <i class="fas fa-envelope" style="font-size: 1.5rem; color: var(--primary);"></i>
+            <div>
+                <h4 style="color: var(--text-main); margin: 0;">Email Me</h4>
+                <span style="color: var(--text-muted); font-size: 0.85rem;">odhiambobran004@gmail.com</span>
+            </div>
+        </a>
+
+        <a href="https://wa.me/25411736502" target="_blank" class="card" style="text-decoration: none; display: flex; align-items: center; gap: 1rem; padding: 1.2rem 2rem; min-width: 250px;">
+            <i class="fab fa-whatsapp" style="font-size: 1.5rem; color: var(--accent);"></i>
+            <div>
+                <h4 style="color: var(--text-main); margin: 0;">WhatsApp</h4>
+                <span style="color: var(--text-muted); font-size: 0.85rem;">+254 117 365 02</span>
+            </div>
+        </a>
+    </div>
 </section>
 
 {% endblock %}
