@@ -103,9 +103,10 @@ main {
 }
 
 .profile-pic {
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
+    object-position: center 15%; /* Positions image focus on your face */
     border-radius: 50%;
     border: 4px solid var(--primary);
     box-shadow: 0 0 25px rgba(56, 189, 248, 0.25);
