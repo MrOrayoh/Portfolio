@@ -1,0 +1,67 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <img src="/static/images/profile.jpg" class="profile-pic">
+
+        <h1>Hi, I'm Brian 👋</h1>
+        <p class="subtitle">Flutter & Django Developer</p>
+
+        <a href="#projects" class="btn">View My Work</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I'm an IT student passionate about building real-world applications like
+        Spotted, MrSphere, and transport systems. I love clean UI and smart backend systems.
+    </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+        <div class="card">
+            <h3>Spotted App</h3>
+            <p>Location-based social app with live features.</p>
+        </div>
+
+        <div class="card">
+            <h3>MrSphere</h3>
+            <p>Voice-controlled system to manage devices.</p>
+        </div>
+
+        <div class="card">
+            <h3>TSafari</h3>
+            <p>Transport booking system with real-time drivers.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section">
+    <h2>Skills</h2>
+
+    <div class="skills">
+        <span>Flutter</span>
+        <span>Django</span>
+        <span>Firebase</span>
+        <span>Python</span>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: odhiambobran004@gmail.com</p>
+    <p>WhatsApp: +25411736502</p>
+</section>
+
+{% endblock %}
